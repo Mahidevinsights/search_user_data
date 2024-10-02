@@ -19,6 +19,7 @@ class CommonAppBar extends StatelessWidget implements PreferredSizeWidget {
   Widget build(BuildContext context) {
     return AppBar(
       backgroundColor: Colors.white,
+      automaticallyImplyLeading: false,
       flexibleSpace: Container(
           decoration: const BoxDecoration(
         color: Colors.white, // AppBar's background color
@@ -45,7 +46,7 @@ class CommonAppBar extends StatelessWidget implements PreferredSizeWidget {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => InAppWebViewScreen(
+                    builder: (context) => const InAppWebViewScreen(
                       url: 'https://www.girmantech.com/',
                       title: 'Girman Technologies',
                     ),
@@ -56,7 +57,7 @@ class CommonAppBar extends StatelessWidget implements PreferredSizeWidget {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => InAppWebViewScreen(
+                    builder: (context) => const InAppWebViewScreen(
                       url: 'https://www.linkedin.com/company/girmantech/',
                       title: 'GirmanTech - LinkedIn',
                     ),
