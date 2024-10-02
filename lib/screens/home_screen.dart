@@ -59,12 +59,12 @@ class HomeScreen extends StatelessWidget {
                 children: [
                   SizedBox(
                       height:
-                          verticalPadding * 3.5), // Dynamic spacing at the top
+                          verticalPadding * 4.5), // Dynamic spacing at the top
 
                   // Logo image
                   Image.asset('assets/images/girman_logo.png', height: 65),
 
-                  SizedBox(height: verticalPadding), // Vertical padding
+                  SizedBox(height: verticalPadding * 0.65), // Vertical padding
 
                   // Search input
                   Container(
